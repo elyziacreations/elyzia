@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elyzia - For Every Occasion</title>
-    <meta name="description" content="Elynziaevents creates stunning, customized stages that bring every celebration to life.">
+    <meta name="description"
+        content="Elynziaevents creates stunning, customized stages that bring every celebration to life.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playball&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="container header-container">
@@ -16,6 +20,7 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#showcase">Showcase</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -24,24 +29,46 @@
     </header>
 
     <section id="home" class="hero">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="event-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
         <div class="container hero-content">
             <div class="text-content">
                 <h1 class="main-title">ELYZIA</h1>
                 <h2 class="sub-title">For Every Occasion</h2>
                 <p class="description">
-                    Elynziaevents creates stunning, customized stages that bring every celebration to life. 
-                    From weddings to birthdays, haldi to engagements - we design stages that make every 
+                    Elynziaevents creates stunning, customized stages that bring every celebration to life.
+                    From weddings to birthdays, haldi to engagements - we design stages that make every
                     moment unforgettable.
                 </p>
                 <a href="#contact" class="btn">Plan Your Event</a>
             </div>
-            <div class="image-content">
-                <div class="hexagon-wrapper">
-                    <img src="premium_stage_decor.png" alt="Elyzia Premium Event Stage Decor">
+        </div>
+        <div class="dots-pattern"></div>
+    </section>
+
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <div class="phones-container">
+                <div class="phone-frame">
+                    <video autoplay loop muted playsinline>
+                        <source src="2.mp4" type="video/mp4">
+                    </video>
+                    <a href="https://www.instagram.com/reel/DXjcVPLvYBW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="phone-btn">
+                        <i class="fa-brands fa-instagram"></i> Click Here
+                    </a>
+                </div>
+                <div class="phone-frame">
+                    <video autoplay loop muted playsinline>
+                        <source src="3 (2).mp4" type="video/mp4">
+                    </video>
+                    <a href="https://www.instagram.com/reel/DRw0FUkESkF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="phone-btn">
+                        <i class="fa-brands fa-instagram"></i> Click Here
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="dots-pattern"></div>
     </section>
 
     <section id="services" class="services">
@@ -85,15 +112,18 @@
                 </div>
                 <div class="info-item">
                     <i class="fa-brands fa-instagram"></i>
-                    <a href="https://instagram.com/elyziacreations" target="_blank" rel="noopener noreferrer" class="contact-link">@elyziacreations</a>
+                    <a href="https://instagram.com/elyziacreations" target="_blank" rel="noopener noreferrer"
+                        class="contact-link">@elyziacreations</a>
                 </div>
             </div>
             <div class="contact-form">
                 <form id="whatsappForm">
                     <input type="text" id="name" placeholder="Your Name" required>
                     <input type="text" id="eventType" placeholder="Event Type (e.g., Wedding, Birthday)" required>
-                    <textarea id="message" placeholder="Tell us about your requirements..." rows="4" required></textarea>
-                    <button type="submit" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Send on WhatsApp</button>
+                    <textarea id="message" placeholder="Tell us about your requirements..." rows="4"
+                        required></textarea>
+                    <button type="submit" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Send on
+                        WhatsApp</button>
                 </form>
             </div>
         </div>
@@ -107,4 +137,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
