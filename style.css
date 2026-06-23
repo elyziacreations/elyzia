@@ -57,6 +57,21 @@ header {
     border-radius: 5px;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.call-now-btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -493,6 +508,32 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: #FFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+    color: #FFF;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
@@ -506,9 +547,24 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    .logo {
+        height: 40px;
+    }
+    
     .header-container {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
+    }
+    
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
     
     nav ul {
@@ -516,6 +572,10 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
+    }
+
+    .hero {
+        padding-top: 160px; /* Prevents the header from overlapping the content */
     }
 
     .hero-content, .contact-container {
@@ -543,6 +603,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .hero {
+        padding-top: 180px; /* Accounts for wrapped navigation items */
+    }
+
     .main-title {
         font-size: 2.8rem;
     }
@@ -553,6 +617,7 @@ footer {
     
     .description {
         font-size: 0.95rem;
+        margin-bottom: 20px;
     }
     
     .phones-container {
@@ -593,5 +658,13 @@ footer {
     .btn {
         padding: 12px 25px;
         font-size: 1rem;
+    }
+    
+    .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        bottom: 20px;
+        right: 20px;
     }
 }
